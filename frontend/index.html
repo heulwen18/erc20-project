@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyToken DApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>MyToken DApp</h1>
+        <button id="connectButton">Connect MetaMask</button>
+        <p>Account: <span id="account">Not connected</span></p>
+        <p>Balance: <span id="balance">0</span> MTDF</p>
+        <p>Current Fee: <span id="currentFee">0</span>%</p>
+
+        <h2>Transfer Tokens</h2>
+        <input type="text" id="recipient" placeholder="Recipient Address">
+        <input type="number" id="amount" placeholder="Amount">
+        <button id="transferButton">Transfer</button>
+    </div>
+    <script src="node_modules/ethers/dist/ethers.umd.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
